@@ -1,0 +1,34 @@
+{% extens 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block body_block %}
+<div class="container-fluid">
+    <h2 style="text-align: center;"><b>BOOK DETAILS</b></h2>
+<table>
+    <tr> <th>COVER</th>
+         <th>TITLE</th>
+         <th>author</th>
+         <th>PDF</th>
+
+    </tr>
+    {% for i in b %}
+    <tr><img scr="{{i.cover.url}}" width="100px" height="100px"></tr>
+    <td>{{i.title}}</td>
+    <td>{{i.author}}</td>
+    <td><a href="{{i.pdf.url}}">Download</a></td>
+    </tr>
+    {% endfor %}
+
+
+</table>
+{% endblock %}
+</div>
+    
+</body>
+</html>
