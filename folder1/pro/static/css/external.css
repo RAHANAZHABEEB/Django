@@ -10,3 +10,15 @@
 .c{
     width: 98%;
 }
+.d{
+    width: 98%;
+}
+marquee{
+    height: 150px;
+    color: rgb(218, 65, 65);
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    padding-top: 2rem;
+    background-color: rgb(231, 132, 147);
+}
